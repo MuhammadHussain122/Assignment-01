@@ -5,16 +5,21 @@ the phrase the Great to each magician’s name. Call show_magicians() to
 see that the list has actually been modified.
 */
 
-var magicians_name = ["Merry","Jhon","David","Rohit","Albert"];
-function show_magicians(magicians_name: string[])
-{
-  for(let i=0; i<magicians_name.length; i++)
-  console.log(magicians_name[i]);
+let magicians:string[] = ["Merry","Jhon","David","Rohit","Albert"];
+
+function make_great(magicians: string[]) {
+
+  for (let i = 0; i < magicians.length; i++) {
+   magicians[i] = magicians[i] + " the Great";
+  }
 }
-show_magicians(magicians_name);
-function make_great()
-{
-  for(let i=0; i<magicians_name.length; i++)
-  console.log("Great",magicians_name[i]);
+
+function show_magicians(magicians: string[]) {
+
+  for (let i = 0; i < magicians.length; i++) {
+   console.log(magicians[i]) ;
+  }
 }
-make_great();
+
+make_great(magicians); 
+show_magicians(magicians)

@@ -10,16 +10,14 @@ function make_sandwich() {
     for (var _i = 0; _i < arguments.length; _i++) {
         items[_i] = arguments[_i];
     }
-    console.log("Sandwiches");
+    console.log("Items");
     if (items.length === 0) {
         console.log("You have not ordered any sandwich");
     }
     else {
-        for (var i = 0; i < items.length; i++) {
-            console.log(items[i]);
-        }
+        console.log(items);
     }
 }
 make_sandwich("lettuce", "tomato", "cucumber");
 make_sandwich("cheddar", "Swiss", "provolone");
-make_sandwich("turkey", "ham", "roast beef");
+make_sandwich();

@@ -12,13 +12,13 @@ new username. If a username has not been used, print a message saying that the u
 • sure your comparison is case sensitive. If 'John' has been used, 'JOHN' should not be accepted.
 */
 
-let current_users= ["Ahmed", "Ali", "Qasim", "Malik","Hasan"];
-let new_users= ["Ahmed", "Ali", "Waqar", "Saleem", "Kaleem"];
-for(let i=0; i<new_users.length; i++){
-  if(new_users[i]===current_users[i]){
-    console.log("You will need to enter a new user name");
-  }
-  else{
-    console.log("The username is available");
-  }
-}
+let currentUsers= ["Ahmed", "Ali", "Qasim", "Malik","Hasan"];
+let newUsers= ["Ahmed", "Ali", "Waqar", "Saleem", "Kaleem"];
+
+newUsers.forEach(newUser => {
+    if (currentUsers.some(currentUser => currentUser.toLowerCase() === newUser.toLowerCase())) {
+        console.log(`${newUser} will need to enter a new username.`);
+    } else {
+        console.log(`${newUser} is available.`);
+    }
+});

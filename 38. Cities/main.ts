@@ -6,19 +6,13 @@ Call your function for three different cities, at least one of which is not in t
 default country.
 */
 
-function describe_city()
+function describe_city(city:string, country:string= "Pakistan")
 {
-  let country1 = "Pakistan";
-  let city3= "New Dehli";
-  function country()
-  {
-    let city1= "Karachi";
-    let city2= "Lahore";
-    console.log(city1,"is in", country1);
-    console.log(city2,"is in", country1);
-  }
-  country();
-  console.log(city3,"is not in", country1);
-  
+  console.log(`${city} is in ${country}`)
 }
-describe_city();
+
+describe_city("Skardu");
+
+describe_city("Karachi");
+  
+describe_city("Beijing","China");

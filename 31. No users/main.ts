@@ -7,17 +7,16 @@ Add an if test to Exercise 30 to make sure the list of users is not empty.
 */
 
 let user_names= ["Admin", "Clerk", "Manager", "Customer", "Eric"];
-for(let i=0; i<=user_names.length; i++){
-  if(user_names[i]== "Admin"){
+user_names.forEach(user_name => {
+  if(user_name === "Admin"){
     console.log("Hello Admin, Would you like to see a status report?");
   }
   else{
     
-    console.log("Hello", user_names[i-1], "thank you for logging again");
+    console.log(`Hello ${user_name},thank you for logging again`);
 
   }
-
-}
+});
 
 user_names=[];
 if(user_names.includes("Admin"|| "Clerk" || "Manager" || "Customer" || "Eric")){

@@ -13,9 +13,10 @@ about the kinds of pizza you like and then an additional sentence, such as
 I really love pizza!
 */
 
-let favorite_pizza= ["Margherita", "Pepperoni","Hawaiian"];
-for(let i=0; i<favorite_pizza.length; i++){
-  console.log("I like",favorite_pizza[i],"pizza");
-}
+let favoritePizza: string[]= ["Margherita", "Pepperoni","Hawaiian"];
+
+favoritePizza.forEach(pizza=>{
+  console.log("I like", pizza ,"pizza");
+})
 
 console.log("I love three popular kinds of pizza(Margherita, Pepperoni, Hawaiian).I love talking about pizza!");

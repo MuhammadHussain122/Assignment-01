@@ -4,11 +4,7 @@ text of a message that should be printed on the shirt. The function should print
 a sentence summarizing the size of the shirt and the message printed on it.
 Call the function
 */
-function make_shirt() {
-    var size;
-    size = 34;
-    var message;
-    message = "The Size of your shirt is:";
-    console.log(message, size);
+function make_shirt(size, message) {
+    console.log("".concat(message, " ").concat(size));
 }
-make_shirt();
+make_shirt("Medium", "The Size of your shirt is:");

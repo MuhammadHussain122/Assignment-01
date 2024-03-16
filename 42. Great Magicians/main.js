@@ -4,14 +4,16 @@ Write a function called make_great() that modifies the array of magicians by add
 the phrase the Great to each magician’s name. Call show_magicians() to
 see that the list has actually been modified.
 */
-var magicians_name = ["Merry", "Jhon", "David", "Rohit", "Albert"];
-function show_magicians(magicians_name) {
-    for (var i = 0; i < magicians_name.length; i++)
-        console.log(magicians_name[i]);
+var magicians = ["Merry", "Jhon", "David", "Rohit", "Albert"];
+function make_great(magicians) {
+    for (var i = 0; i < magicians.length; i++) {
+        magicians[i] = magicians[i] + " the Great";
+    }
 }
-show_magicians(magicians_name);
-function make_great() {
-    for (var i = 0; i < magicians_name.length; i++)
-        console.log("Great", magicians_name[i]);
+function show_magicians(magicians) {
+    for (var i = 0; i < magicians.length; i++) {
+        console.log(magicians[i]);
+    }
 }
-make_great();
+make_great(magicians);
+show_magicians(magicians);

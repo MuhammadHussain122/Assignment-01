@@ -9,22 +9,16 @@ Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ord
 7th 8th 9th", and each result should be on a separate line.
 */
 
-let numbers= [1, 2, 3, 4, 5, 6, 7, 8 ,9];
-for(let i=0; i<numbers.length; i++){
-   if(numbers[i]===1)
-   {
-    console.log(numbers[i],"st");
-   }
-   if(numbers[i]===2)
-   {
-    console.log(numbers[i],"nd")
-  
-   }
-  if(numbers[i]===3)
-  {
-   console.log(numbers[i],"rd")
-  }
-  if(numbers[i]!=1&&numbers[i]!=2&&numbers[i]!=3){
-    console.log(numbers[i],"th");
-  }
-}
+let numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+numbers.forEach(number => {
+    let suffix = "th";
+    if (number === 1) {
+        suffix = "st";
+    } else if (number === 2) {
+        suffix = "nd";
+    } else if (number === 3) {
+        suffix = "rd";
+    }
+    console.log(`${number}${suffix}`);
+});

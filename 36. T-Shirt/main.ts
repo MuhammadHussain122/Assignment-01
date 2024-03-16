@@ -5,12 +5,8 @@ a sentence summarizing the size of the shirt and the message printed on it.
 Call the function
 */
 
-function make_shirt()
-{
-  let size;
-  size = 34;
-  let message;
-  message = "The Size of your shirt is:"
-  console.log(message,size);
+function make_shirt(size: string, message:string ){
+
+  console.log(`${size}, ${message}`);
 }
-make_shirt();
+make_shirt("Medium", "The Size of your shirt is:");

@@ -8,10 +8,8 @@ Call your function with at least three city-country pairs, and print the value
 that’s returned.
 */
 function city_country(city, country) {
-    city;
-    country;
-    console.log(city, ",", country);
+    console.log("\"".concat(city, ", ").concat(country, "\""));
 }
 city_country("Karachi", "Pakistan");
-city_country("Lahore", "Pakistan");
+city_country("Beijing", "China");
 city_country("New Dehli", "India");

@@ -5,15 +5,21 @@ original array will be unchanged, return the new array and store it in a separat
 Call show_magicians() with each array to show that you have one array of the original
 names and one array with the Great added to each magician’s name.
 */
+let magicians: string[] = ["Alice", "David", "Chris"];
 
-let magicians_name = ["Merry","Jhon","David","Rohit","Albert"];
-function show_magicians()
-{
-  console.log(magicians_name);
-  function make_great()
-  {
-    console.log("Great",magicians_name);
-  }
-  make_great();
+function make_great(magicians: string[]): string[] {
+    let greatMagicians:string[] = [];
+    magicians.forEach(magician => {
+        greatMagicians.push(`${magician} the Great`);
+    });
+    return greatMagicians;
 }
-show_magicians();
+function show_magicians(magicians?:string[], greatMagicians?:string[]){
+ console.log(magicians);
+ console.log(greatMagicians);
+}
+let greatMagicians = make_great(magicians.slice()); // Creates a new modified array
+console.log("Original magicians:");
+show_magicians(magicians); // Shows original names
+console.log("Great magicians:");
+show_magicians(greatMagicians);

@@ -4,7 +4,8 @@ called show_magicians(), which prints the name of each magician in the array.
 */
 var magicians_name = ["Merry", "Jhon", "David", "Rohit", "Albert"];
 function show_magicians(magicians_name) {
-    for (var i = 0; i < magicians_name.length; i++)
-        console.log(magicians_name[i]);
+    magicians_name.forEach(function (magician) {
+        console.log(magician);
+    });
 }
 show_magicians(magicians_name);

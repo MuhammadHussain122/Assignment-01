@@ -10,12 +10,10 @@ that’s returned.
 
 function city_country(city:string, country:string)
 {
-  city;
-  country;
-  console.log(city,",",country);
+  console.log(`"${city}, ${country}"`);
 }
 city_country("Karachi", "Pakistan");
-city_country("Lahore", "Pakistan");
+city_country("Beijing", "China");
 city_country("New Dehli", "India");
 
 

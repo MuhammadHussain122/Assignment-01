@@ -12,8 +12,8 @@ how much you like pizza. The output should consist of three or more lines
 about the kinds of pizza you like and then an additional sentence, such as
 I really love pizza!
 */
-var favorite_pizza = ["Margherita", "Pepperoni", "Hawaiian"];
-for (var i = 0; i < favorite_pizza.length; i++) {
-    console.log("I like", favorite_pizza[i], "pizza");
-}
+var favoritePizza = ["Margherita", "Pepperoni", "Hawaiian"];
+favoritePizza.forEach(function (pizza) {
+    console.log("I like", pizza, "pizza");
+});
 console.log("I love three popular kinds of pizza(Margherita, Pepperoni, Hawaiian).I love talking about pizza!");
